@@ -559,7 +559,7 @@ class MainActivity : Activity() {
                     c.addView(tv("Selesai", 18f, Color.WHITE, true), lp(WRAP, WRAP))
                     c.addView(tv("$done/${list.size} modul dijalankan", 13f, C_GREEN, true), lp(WRAP, WRAP, 2))
                     logBox.addView(c, lp(MATCH, WRAP, 10))
-                }
+                
             } finally {
                 running = false
             }
@@ -578,4 +578,3 @@ class MainActivity : Activity() {
             runOnUiThread { Toast.makeText(this, last, Toast.LENGTH_SHORT).show() }
         }
     }
-}
